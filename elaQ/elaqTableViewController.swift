@@ -18,7 +18,7 @@ class elaqTableViewController: UITableViewController, NVActivityIndicatorViewabl
         super.viewDidLoad()
         tableView.register(UINib(nibName: "MenuInfoCell", bundle: nil), forCellReuseIdentifier: "MenuInfoCell")
         tableView.rowHeight = UITableViewAutomaticDimension
-        //tableView.backgroundColor = UIColor.clear
+        tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,6 +55,9 @@ class elaqTableViewController: UITableViewController, NVActivityIndicatorViewabl
                 } else {
                     self.getNewData()
                 }
+            }, errorHandle: {_ in
+                self.stopAnimating()
+                self.displayAlert()
             })
         } else {
             stopAnimating()
@@ -95,14 +98,17 @@ class elaqTableViewController: UITableViewController, NVActivityIndicatorViewabl
     @IBAction func addButtonAction(_ sender: Any) {
         
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func displayAlert() {
+        let title = "Error:"
+        let message = "Blockchain is not ready yet."
+        let okText = "ok"
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let okayButton = UIAlertAction(title: okText, style: UIAlertActionStyle.cancel, handler: nil)
+        alert.addAction(okayButton)
+        
+        present(alert, animated: true, completion: nil)
     }
-    */
 
 }

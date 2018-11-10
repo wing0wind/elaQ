@@ -121,7 +121,7 @@ class NetWorkUtil: NSObject {
         }
     }
     
-    class func testPost(txid: [String], completion: @escaping (boArticle) -> ()) {
+    class func testPost(txid: [String], completion: @escaping (boArticle) -> (), errorHandle: @escaping (Error) -> ()) {
         let parameters: Parameters = [
             "key": "boarticle",
             "txIds": txid
@@ -138,6 +138,7 @@ class NetWorkUtil: NSObject {
                     completion(article.result.data)
                 } catch {
                     print(error)
+                    errorHandle(error)
                 }
             }
         }
