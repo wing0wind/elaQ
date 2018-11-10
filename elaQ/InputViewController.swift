@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class InputViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
+class InputViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate, NVActivityIndicatorViewable {
 
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var inputTextView: UITextView!
@@ -70,7 +71,9 @@ class InputViewController: UIViewController, UITextViewDelegate, UITextFieldDele
     @IBAction func submitButtonAction(_ sender: Any) {
         let title = titleField.text ?? "No title"
         let detail = inputTextView.text ?? "No detail"
+        startAnimating(CGSize(width: 20, height: 20),message: "Loading")
         NetWorkUtil.testPostArticle(title: title, detail: detail, completion: {result in
+            self.stopAnimating()
             self.postSuccess(result: result)
         })
     }

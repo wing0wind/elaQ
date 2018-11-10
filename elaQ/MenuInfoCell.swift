@@ -40,6 +40,13 @@ final class MenuInfoCell: UITableViewCell {
         
         containerView.layer.borderWidth = 1
         containerView.layer.cornerRadius = 6
+        containerView.layer.borderColor = UIColor.black.cgColor
+        
+        containerView.layer.shadowOpacity = 0.8
+        containerView.layer.shadowOffset = CGSize(width: 0, height: 6)
+        containerView.layer.shadowRadius = 6
+        containerView.layer.shadowColor = UIColor.gray.cgColor
+        containerView.layer.masksToBounds = false
 
     }
     

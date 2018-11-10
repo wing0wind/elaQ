@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class elaqTableViewController: UITableViewController {
+class elaqTableViewController: UITableViewController, NVActivityIndicatorViewable {
     var articles: [boArticle] = []
     var saveAList: [String] = []
     var count = 0
@@ -49,12 +50,14 @@ class elaqTableViewController: UITableViewController {
                 self.count += 1
                 if self.articles.count == self.saveAList.count {
                     self.generateNewData(newData: ariticle)
+                    self.stopAnimating()
                 } else {
                     self.getNewData()
                 }
             })
+        } else {
+            stopAnimating()
         }
-        
     }
     
     func generateNewData(newData: boArticle) {
@@ -78,11 +81,12 @@ class elaqTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuInfoCell", for: indexPath) as! MenuInfoCell
         
         // Configure the cell...
-        cell.configureCell(entity: articles[indexPath.row])
+        cell.configureCell(entity: articles[(articles.count-1)-indexPath.row])
         return cell
     }
     
     @IBAction func refreshButtonAction(_ sender: Any) {
+        startAnimating(CGSize(width: 20, height: 20),message: "Loading")
         getNewData()
     }
     

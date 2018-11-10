@@ -24,6 +24,8 @@ def install_pods
 
     # Key Chain
     pod 'KeychainAccess'
+    
+    pod 'NVActivityIndicatorView'
 end
 
 # target list
