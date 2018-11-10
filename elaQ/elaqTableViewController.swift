@@ -10,11 +10,17 @@ import UIKit
 
 class elaqTableViewController: UITableViewController {
     var articles: [boArticle] = []
+    var saveAList: [String] = []
+    var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "MenuInfoCell", bundle: nil), forCellReuseIdentifier: "MenuInfoCell")
         tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        checkSavedData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,15 +28,36 @@ class elaqTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func checkSavedData() {
+        let userDef = UserDefaults.standard
+        if let aList = userDef.object(forKey: NetWorkUtil.USERDEF_ARTICLE_LIST_ID_KEY) as? [String] {
+            print(aList)
+            saveAList = aList
+        } else {
+            print("No Data!")
+            let newAList = ["6A34F0F0A6D5F9F4EFC481587143CFC0100811911CD67B3DA98663FB609A8493"]
+            userDef.setValue(newAList, forKey: NetWorkUtil.USERDEF_ARTICLE_LIST_ID_KEY)
+            userDef.synchronize()
+        }
+        
+    }
+    
     func getNewData() {
-        NetWorkUtil.testPost(txid: ["6A34F0F0A6D5F9F4EFC481587143CFC0100811911CD67B3DA98663FB609A8493"],completion: {ariticle in
-            self.generateNewData(newData: ariticle)
-        })
+        if articles.count < saveAList.count {
+            NetWorkUtil.testPost(txid: [saveAList[count]],completion: {ariticle in
+                self.articles.append(ariticle)
+                self.count += 1
+                if self.articles.count == self.saveAList.count {
+                    self.generateNewData(newData: ariticle)
+                } else {
+                    self.getNewData()
+                }
+            })
+        }
+        
     }
     
     func generateNewData(newData: boArticle) {
-        print(newData)
-        articles.append(newData)
         tableView.reloadData()
     }
 

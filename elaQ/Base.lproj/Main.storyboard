@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="exy-4u-9Qa">
-                                <rect key="frame" x="12" y="74" width="351" height="517"/>
+                                <rect key="frame" x="12" y="128" width="351" height="463"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -81,21 +81,34 @@
                                     <outlet property="delegate" destination="Nhy-vk-l9F" id="5h1-Wj-Djv"/>
                                 </connections>
                             </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-VW-B1R">
+                                <rect key="frame" x="12" y="80" width="351" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nhy-vk-l9F" id="dVi-qM-zOs"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="exy-4u-9Qa" firstAttribute="top" secondItem="Wdb-VW-B1R" secondAttribute="bottom" constant="18" id="6y9-Hd-IF5"/>
+                            <constraint firstItem="Wdb-VW-B1R" firstAttribute="leading" secondItem="iyI-dO-lAt" secondAttribute="leading" constant="12" id="8dA-tN-9kc"/>
                             <constraint firstItem="CCh-1F-GVh" firstAttribute="leading" secondItem="iyI-dO-lAt" secondAttribute="leading" id="KTT-xo-0Gz"/>
                             <constraint firstItem="CCh-1F-GVh" firstAttribute="top" secondItem="exy-4u-9Qa" secondAttribute="bottom" constant="10" id="LY6-s5-emr"/>
                             <constraint firstItem="iyI-dO-lAt" firstAttribute="trailing" secondItem="exy-4u-9Qa" secondAttribute="trailing" constant="12" id="PTb-N6-8z3"/>
                             <constraint firstItem="iyI-dO-lAt" firstAttribute="bottom" secondItem="CCh-1F-GVh" secondAttribute="bottom" constant="16" id="SYV-8o-VBl"/>
+                            <constraint firstItem="iyI-dO-lAt" firstAttribute="trailing" secondItem="Wdb-VW-B1R" secondAttribute="trailing" constant="12" id="Uul-f2-oUY"/>
                             <constraint firstItem="iyI-dO-lAt" firstAttribute="trailing" secondItem="CCh-1F-GVh" secondAttribute="trailing" id="ect-pz-eBq"/>
                             <constraint firstItem="exy-4u-9Qa" firstAttribute="leading" secondItem="iyI-dO-lAt" secondAttribute="leading" constant="12" id="l7p-ob-V7b"/>
-                            <constraint firstItem="exy-4u-9Qa" firstAttribute="top" secondItem="iyI-dO-lAt" secondAttribute="top" constant="10" id="rGa-yD-BUk"/>
+                            <constraint firstItem="Wdb-VW-B1R" firstAttribute="top" secondItem="iyI-dO-lAt" secondAttribute="top" constant="16" id="mnY-nI-klU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iyI-dO-lAt"/>
                     </view>
                     <connections>
                         <outlet property="inputTextView" destination="exy-4u-9Qa" id="DhH-NP-xdl"/>
+                        <outlet property="titleField" destination="Wdb-VW-B1R" id="D1C-5G-oKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcK-hn-8Or" userLabel="First Responder" sceneMemberID="firstResponder"/>

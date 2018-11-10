@@ -73,6 +73,8 @@ enum Router: URLRequestConvertible {
 
 class NetWorkUtil: NSObject {
     
+    static let USERDEF_ARTICLE_LIST_ID_KEY = "articleListID"
+    
     class func testGet() {
         Alamofire.request("http://192.168.128.102:8091/api/1/currHeight").responseJSON { response in
             debugPrint(response)
