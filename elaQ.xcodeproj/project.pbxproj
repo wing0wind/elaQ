@@ -15,6 +15,7 @@
 		187879132197025000A8AAC9 /* elaqTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187879102197025000A8AAC9 /* elaqTableViewController.swift */; };
 		187E4444219727A6006DEA07 /* MenuInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E4443219727A6006DEA07 /* MenuInfoCell.xib */; };
 		187E4446219727C3006DEA07 /* MenuInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E4445219727C3006DEA07 /* MenuInfoCell.swift */; };
+		187E444C219737ED006DEA07 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E444B219737ED006DEA07 /* InputViewController.swift */; };
 		18CE9C902196F1CC00300CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE9C8F2196F1CC00300CA4 /* AppDelegate.swift */; };
 		18CE9C992196F1CC00300CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE9C972196F1CC00300CA4 /* Main.storyboard */; };
 		18CE9C9B2196F1CE00300CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CE9C9A2196F1CE00300CA4 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		187879102197025000A8AAC9 /* elaqTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elaqTableViewController.swift; sourceTree = "<group>"; };
 		187E4443219727A6006DEA07 /* MenuInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuInfoCell.xib; sourceTree = "<group>"; };
 		187E4445219727C3006DEA07 /* MenuInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInfoCell.swift; sourceTree = "<group>"; };
+		187E444B219737ED006DEA07 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		18CE9C8C2196F1CC00300CA4 /* elaQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elaQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CE9C8F2196F1CC00300CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CE9C982196F1CC00300CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				18CE9C8F2196F1CC00300CA4 /* AppDelegate.swift */,
+				187E444B219737ED006DEA07 /* InputViewController.swift */,
 				18CE9C972196F1CC00300CA4 /* Main.storyboard */,
 				18CE9C9A2196F1CE00300CA4 /* Assets.xcassets */,
 				18CE9C9C2196F1CE00300CA4 /* LaunchScreen.storyboard */,
@@ -354,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				187879112197025000A8AAC9 /* elaqTableViewController.swift in Sources */,
+				187E444C219737ED006DEA07 /* InputViewController.swift in Sources */,
 				1878790D2196FD2100A8AAC9 /* NetWorkUtil.swift in Sources */,
 				187E4446219727C3006DEA07 /* MenuInfoCell.swift in Sources */,
 				18CE9C902196F1CC00300CA4 /* AppDelegate.swift in Sources */,
