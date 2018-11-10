@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1878790D2196FD2100A8AAC9 /* NetWorkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878790C2196FD2100A8AAC9 /* NetWorkUtil.swift */; };
+		1878790E2196FD2100A8AAC9 /* NetWorkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878790C2196FD2100A8AAC9 /* NetWorkUtil.swift */; };
+		1878790F2196FD2100A8AAC9 /* NetWorkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878790C2196FD2100A8AAC9 /* NetWorkUtil.swift */; };
+		187879112197025000A8AAC9 /* elaqTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187879102197025000A8AAC9 /* elaqTableViewController.swift */; };
+		187879122197025000A8AAC9 /* elaqTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187879102197025000A8AAC9 /* elaqTableViewController.swift */; };
+		187879132197025000A8AAC9 /* elaqTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187879102197025000A8AAC9 /* elaqTableViewController.swift */; };
+		187E4444219727A6006DEA07 /* MenuInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E4443219727A6006DEA07 /* MenuInfoCell.xib */; };
+		187E4446219727C3006DEA07 /* MenuInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E4445219727C3006DEA07 /* MenuInfoCell.swift */; };
 		18CE9C902196F1CC00300CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE9C8F2196F1CC00300CA4 /* AppDelegate.swift */; };
-		18CE9C922196F1CC00300CA4 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE9C912196F1CC00300CA4 /* DocumentBrowserViewController.swift */; };
-		18CE9C942196F1CC00300CA4 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE9C932196F1CC00300CA4 /* DocumentViewController.swift */; };
-		18CE9C962196F1CC00300CA4 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE9C952196F1CC00300CA4 /* Document.swift */; };
 		18CE9C992196F1CC00300CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE9C972196F1CC00300CA4 /* Main.storyboard */; };
 		18CE9C9B2196F1CE00300CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CE9C9A2196F1CE00300CA4 /* Assets.xcassets */; };
 		18CE9C9E2196F1CE00300CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE9C9C2196F1CE00300CA4 /* LaunchScreen.storyboard */; };
 		18CE9CA92196F1CE00300CA4 /* elaQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE9CA82196F1CE00300CA4 /* elaQTests.swift */; };
 		18CE9CB42196F1CE00300CA4 /* elaQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE9CB32196F1CE00300CA4 /* elaQUITests.swift */; };
+		C54C339AF8531B13848614D4 /* Pods_elaQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B009F13C3ECF20666AF452D7 /* Pods_elaQ.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1878790C2196FD2100A8AAC9 /* NetWorkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkUtil.swift; sourceTree = "<group>"; };
+		187879102197025000A8AAC9 /* elaqTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elaqTableViewController.swift; sourceTree = "<group>"; };
+		187E4443219727A6006DEA07 /* MenuInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuInfoCell.xib; sourceTree = "<group>"; };
+		187E4445219727C3006DEA07 /* MenuInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInfoCell.swift; sourceTree = "<group>"; };
 		18CE9C8C2196F1CC00300CA4 /* elaQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elaQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CE9C8F2196F1CC00300CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18CE9C912196F1CC00300CA4 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
-		18CE9C932196F1CC00300CA4 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
-		18CE9C952196F1CC00300CA4 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		18CE9C982196F1CC00300CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18CE9C9A2196F1CE00300CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CE9C9D2196F1CE00300CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		18CE9CAF2196F1CE00300CA4 /* elaQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = elaQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CE9CB32196F1CE00300CA4 /* elaQUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elaQUITests.swift; sourceTree = "<group>"; };
 		18CE9CB52196F1CE00300CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208AB683B9713F02EBD09EC6 /* Pods-elaQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elaQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-elaQ/Pods-elaQ.release.xcconfig"; sourceTree = "<group>"; };
+		35919F2355728E6EEA8A06A6 /* Pods-elaQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elaQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elaQ/Pods-elaQ.debug.xcconfig"; sourceTree = "<group>"; };
+		B009F13C3ECF20666AF452D7 /* Pods_elaQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elaQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54C339AF8531B13848614D4 /* Pods_elaQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02D5BB5F2E4430A41A50BAE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B009F13C3ECF20666AF452D7 /* Pods_elaQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18CE9C832196F1CC00300CA4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,8 @@
 				18CE9CA72196F1CE00300CA4 /* elaQTests */,
 				18CE9CB22196F1CE00300CA4 /* elaQUITests */,
 				18CE9C8D2196F1CC00300CA4 /* Products */,
+				DDE2DE1A0331AE25C9BF9589 /* Pods */,
+				02D5BB5F2E4430A41A50BAE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,13 +123,14 @@
 			isa = PBXGroup;
 			children = (
 				18CE9C8F2196F1CC00300CA4 /* AppDelegate.swift */,
-				18CE9C912196F1CC00300CA4 /* DocumentBrowserViewController.swift */,
-				18CE9C932196F1CC00300CA4 /* DocumentViewController.swift */,
-				18CE9C952196F1CC00300CA4 /* Document.swift */,
 				18CE9C972196F1CC00300CA4 /* Main.storyboard */,
 				18CE9C9A2196F1CE00300CA4 /* Assets.xcassets */,
 				18CE9C9C2196F1CE00300CA4 /* LaunchScreen.storyboard */,
 				18CE9C9F2196F1CE00300CA4 /* Info.plist */,
+				187E4443219727A6006DEA07 /* MenuInfoCell.xib */,
+				187E4445219727C3006DEA07 /* MenuInfoCell.swift */,
+				1878790C2196FD2100A8AAC9 /* NetWorkUtil.swift */,
+				187879102197025000A8AAC9 /* elaqTableViewController.swift */,
 			);
 			path = elaQ;
 			sourceTree = "<group>";
@@ -131,6 +153,15 @@
 			path = elaQUITests;
 			sourceTree = "<group>";
 		};
+		DDE2DE1A0331AE25C9BF9589 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35919F2355728E6EEA8A06A6 /* Pods-elaQ.debug.xcconfig */,
+				208AB683B9713F02EBD09EC6 /* Pods-elaQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18CE9CB82196F1CE00300CA4 /* Build configuration list for PBXNativeTarget "elaQ" */;
 			buildPhases = (
+				9FF5A90395E4428D3352742A /* [CP] Check Pods Manifest.lock */,
 				18CE9C882196F1CC00300CA4 /* Sources */,
 				18CE9C892196F1CC00300CA4 /* Frameworks */,
 				18CE9C8A2196F1CC00300CA4 /* Resources */,
+				654B09261090857F6CEB878D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +270,7 @@
 			files = (
 				18CE9C9E2196F1CE00300CA4 /* LaunchScreen.storyboard in Resources */,
 				18CE9C9B2196F1CE00300CA4 /* Assets.xcassets in Resources */,
+				187E4444219727A6006DEA07 /* MenuInfoCell.xib in Resources */,
 				18CE9C992196F1CC00300CA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,14 +291,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		654B09261090857F6CEB878D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-elaQ/Pods-elaQ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-elaQ/Pods-elaQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FF5A90395E4428D3352742A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-elaQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18CE9C882196F1CC00300CA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CE9C962196F1CC00300CA4 /* Document.swift in Sources */,
-				18CE9C942196F1CC00300CA4 /* DocumentViewController.swift in Sources */,
-				18CE9C922196F1CC00300CA4 /* DocumentBrowserViewController.swift in Sources */,
+				187879112197025000A8AAC9 /* elaqTableViewController.swift in Sources */,
+				1878790D2196FD2100A8AAC9 /* NetWorkUtil.swift in Sources */,
+				187E4446219727C3006DEA07 /* MenuInfoCell.swift in Sources */,
 				18CE9C902196F1CC00300CA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187879122197025000A8AAC9 /* elaqTableViewController.swift in Sources */,
+				1878790E2196FD2100A8AAC9 /* NetWorkUtil.swift in Sources */,
 				18CE9CA92196F1CE00300CA4 /* elaQTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187879132197025000A8AAC9 /* elaqTableViewController.swift in Sources */,
+				1878790F2196FD2100A8AAC9 /* NetWorkUtil.swift in Sources */,
 				18CE9CB42196F1CE00300CA4 /* elaQUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,9 +531,11 @@
 		};
 		18CE9CB92196F1CE00300CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35919F2355728E6EEA8A06A6 /* Pods-elaQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8996YKA75V;
 				INFOPLIST_FILE = elaQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,9 +550,11 @@
 		};
 		18CE9CBA2196F1CE00300CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208AB683B9713F02EBD09EC6 /* Pods-elaQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8996YKA75V;
 				INFOPLIST_FILE = elaQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
