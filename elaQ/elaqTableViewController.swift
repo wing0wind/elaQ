@@ -13,6 +13,7 @@ class elaqTableViewController: UITableViewController, NVActivityIndicatorViewabl
     var articles: [boArticle] = []
     var saveAList: [String] = []
     var count = 0
+    var launched = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,10 @@ class elaqTableViewController: UITableViewController, NVActivityIndicatorViewabl
     
     override func viewWillAppear(_ animated: Bool) {
         checkSavedData()
+        if !launched { // Only once
+            getNewData()
+            launched = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +40,11 @@ class elaqTableViewController: UITableViewController, NVActivityIndicatorViewabl
         if let aList = userDef.object(forKey: NetWorkUtil.USERDEF_ARTICLE_LIST_ID_KEY) as? [String] {
             print(aList)
             saveAList = aList
+            let newArray = saveAList.filter { !$0.contains("java.") }
+            saveAList = newArray
+            userDef.setValue(newArray, forKey: NetWorkUtil.USERDEF_ARTICLE_LIST_ID_KEY)
+            userDef.synchronize()
+            
         } else {
             print("No Data!")
             let newAList = ["6A34F0F0A6D5F9F4EFC481587143CFC0100811911CD67B3DA98663FB609A8493"]
