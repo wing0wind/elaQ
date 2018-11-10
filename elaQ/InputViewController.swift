@@ -8,16 +8,30 @@
 
 import UIKit
 import NVActivityIndicatorView
+import RxSwift
+import RxCocoa
 
 class InputViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate, NVActivityIndicatorViewable {
 
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var submitButton: UIButton!
+    
+    /// Rx
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bind()
         inputTextView.layer.borderWidth = 1
         inputTextView.layer.cornerRadius = 6
+        submitButton.layer.borderWidth = 1
+        submitButton.layer.cornerRadius = 6
+        submitButton.layer.shadowOpacity = 0.8
+        submitButton.layer.shadowOffset = CGSize(width: 0, height: 6)
+        submitButton.layer.shadowRadius = 6
+        submitButton.layer.shadowColor = UIColor.gray.cgColor
+        submitButton.layer.masksToBounds = false
         
         // 仮のサイズでツールバー生成
         let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
@@ -37,6 +51,25 @@ class InputViewController: UIViewController, UITextViewDelegate, UITextFieldDele
     
     @objc func commitButtonTapped() {
         inputTextView.endEditing(true)
+    }
+    
+    func bind() {
+        let tValidation = titleField.rx.text.orEmpty
+            .map({!$0.isEmpty})
+            .share(replay: 1)
+        
+        let dValidation = inputTextView
+            .rx.text.orEmpty
+            .map({!$0.isEmpty})
+            .share(replay: 1)
+        
+        let enableButton = Observable.combineLatest(tValidation, dValidation) { (login, name) in
+            return login && name
+        }
+        
+        enableButton
+            .bind(to: submitButton.rx.isEnabled)
+            .disposed(by: disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
