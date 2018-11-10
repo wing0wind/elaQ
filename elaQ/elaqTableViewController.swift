@@ -18,6 +18,7 @@ class elaqTableViewController: UITableViewController, NVActivityIndicatorViewabl
         super.viewDidLoad()
         tableView.register(UINib(nibName: "MenuInfoCell", bundle: nil), forCellReuseIdentifier: "MenuInfoCell")
         tableView.rowHeight = UITableViewAutomaticDimension
+        //tableView.backgroundColor = UIColor.clear
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -82,6 +83,7 @@ class elaqTableViewController: UITableViewController, NVActivityIndicatorViewabl
         
         // Configure the cell...
         cell.configureCell(entity: articles[(articles.count-1)-indexPath.row])
+        cell.backgroundColor? = UIColor.clear
         return cell
     }
     

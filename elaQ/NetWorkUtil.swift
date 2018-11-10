@@ -74,9 +74,11 @@ enum Router: URLRequestConvertible {
 class NetWorkUtil: NSObject {
     
     static let USERDEF_ARTICLE_LIST_ID_KEY = "articleListID"
+    static let testServerBase = "http://192.168.128.102:8091"
+    //static let testServerBase = "http://18.179.20.67:8080"
     
     class func testGet() {
-        Alamofire.request("http://192.168.128.102:8091/api/1/currHeight").responseJSON { response in
+        Alamofire.request(testServerBase + "/api/1/currHeight").responseJSON { response in
             debugPrint(response)
             if let json = response.result.value {
                 print("JSON: \(json)")
@@ -104,7 +106,7 @@ class NetWorkUtil: NSObject {
             ]
         ]
         
-        Alamofire.request("http://192.168.128.102:8091/api/1/setDidInfo", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+        Alamofire.request(testServerBase + "/api/1/setDidInfo", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
             debugPrint(response)
             if let data = response.data {
                 let decoder = JSONDecoder()
@@ -125,7 +127,7 @@ class NetWorkUtil: NSObject {
             "txIds": txid
         ]
         
-        Alamofire.request("http://192.168.128.102:8091/api/1/getDidInfo", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+        Alamofire.request(testServerBase + "/api/1/getDidInfo", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
             debugPrint(response)
             if let data = response.data {
                 //print("rJSON: \(json)")

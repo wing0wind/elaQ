@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hi-Ci-PFu">
                         <rect key="frame" x="15" y="0.0" width="345" height="124.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sox-Zn-VhV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elaq" translatesAutoresizingMaskIntoConstraints="NO" id="sox-Zn-VhV">
                                 <rect key="frame" x="15" y="15" width="92" height="92"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="92" id="Auo-vT-qRL"/>
@@ -57,7 +57,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sox-Zn-VhV" firstAttribute="top" secondItem="1hi-Ci-PFu" secondAttribute="top" constant="15" id="45I-Sd-2qY"/>
                             <constraint firstAttribute="trailing" secondItem="gPs-jI-2vH" secondAttribute="trailing" constant="12" id="697-Mb-FHX"/>
@@ -105,4 +105,7 @@
             <point key="canvasLocation" x="22.5" y="97"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="elaq" width="200" height="200"/>
+    </resources>
 </document>

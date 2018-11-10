@@ -17,7 +17,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uoi-uU-H2w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.8784313725490196" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <outlet property="dataSource" destination="qST-TM-frn" id="Cs1-gH-EzX"/>
                             <outlet property="delegate" destination="qST-TM-frn" id="aiN-kq-ePt"/>
@@ -50,7 +50,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCh-1F-GVh">
-                                <rect key="frame" x="0.0" y="601" width="375" height="50"/>
+                                <rect key="frame" x="12" y="601" width="351" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="odb-Sj-aHk"/>
@@ -81,16 +81,16 @@
                                 </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.8784313725490196" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="exy-4u-9Qa" firstAttribute="top" secondItem="Wdb-VW-B1R" secondAttribute="bottom" constant="18" id="6y9-Hd-IF5"/>
                             <constraint firstItem="Wdb-VW-B1R" firstAttribute="leading" secondItem="iyI-dO-lAt" secondAttribute="leading" constant="12" id="8dA-tN-9kc"/>
-                            <constraint firstItem="CCh-1F-GVh" firstAttribute="leading" secondItem="iyI-dO-lAt" secondAttribute="leading" id="KTT-xo-0Gz"/>
+                            <constraint firstItem="CCh-1F-GVh" firstAttribute="leading" secondItem="iyI-dO-lAt" secondAttribute="leading" constant="12" id="KTT-xo-0Gz"/>
                             <constraint firstItem="CCh-1F-GVh" firstAttribute="top" secondItem="exy-4u-9Qa" secondAttribute="bottom" constant="10" id="LY6-s5-emr"/>
                             <constraint firstItem="iyI-dO-lAt" firstAttribute="trailing" secondItem="exy-4u-9Qa" secondAttribute="trailing" constant="12" id="PTb-N6-8z3"/>
                             <constraint firstItem="iyI-dO-lAt" firstAttribute="bottom" secondItem="CCh-1F-GVh" secondAttribute="bottom" constant="16" id="SYV-8o-VBl"/>
                             <constraint firstItem="iyI-dO-lAt" firstAttribute="trailing" secondItem="Wdb-VW-B1R" secondAttribute="trailing" constant="12" id="Uul-f2-oUY"/>
-                            <constraint firstItem="iyI-dO-lAt" firstAttribute="trailing" secondItem="CCh-1F-GVh" secondAttribute="trailing" id="ect-pz-eBq"/>
+                            <constraint firstItem="iyI-dO-lAt" firstAttribute="trailing" secondItem="CCh-1F-GVh" secondAttribute="trailing" constant="12" id="ect-pz-eBq"/>
                             <constraint firstItem="exy-4u-9Qa" firstAttribute="leading" secondItem="iyI-dO-lAt" secondAttribute="leading" constant="12" id="l7p-ob-V7b"/>
                             <constraint firstItem="Wdb-VW-B1R" firstAttribute="top" secondItem="iyI-dO-lAt" secondAttribute="top" constant="16" id="mnY-nI-klU"/>
                         </constraints>
